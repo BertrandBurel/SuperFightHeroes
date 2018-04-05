@@ -4,6 +4,7 @@ import { HomeComponent } from './home/home.component';
 import { GaleryComponent } from './galery/galery.component';
 import { GameComponent } from './game/game.component';
 import { HistoryComponent } from './history/history.component';
+import { TestComponent } from './test/test.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'app', pathMatch: 'full' },
@@ -11,6 +12,7 @@ const routes: Routes = [
   { path: 'galery', component: GaleryComponent },
   { path: 'game', component: GameComponent },
   { path: 'history', component: HistoryComponent },
+  { path: 'test', component: TestComponent },
   ];
 
 
