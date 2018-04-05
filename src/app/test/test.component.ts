@@ -16,28 +16,6 @@ export class TestComponent implements OnInit {
       // console.log(heroes);
       this.heroes = heroes;
     });
-    this.apiService.getHeroesId(12).subscribe(hero => {
-      console.log(hero);
-
-    });
-    this.apiService.getHeroesPower(13).subscribe(hero => {
-      console.log(hero);
-
-    });
-    this.apiService.getHeroesAppearance(14).subscribe(hero => {
-      console.log(hero);
-
-    });
-    this.apiService.getHeroesBiography(14).subscribe(hero => {
-      console.log(hero);
-
-    });
-    // this.apiService.getHeroesImageXs(this.heroes.slug).subscribe(hero => {
-    //   console.log(hero);
-
-    // });
-
-
   }
 
 }

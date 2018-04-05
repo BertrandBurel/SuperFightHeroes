@@ -1,12 +1,13 @@
 <p>
-  test works!
+  <!-- test works! {{heroes[2].name}} -->
+
 </p>
 
 <div class="container-fluid">
   <div class="row">
-<div class="col-xs-1 col-md-2" *ngFor="let hero of heroes">
-  <img class="img-fluid" src="{{hero.images.sm}}" alt="{{hero.name}}">
-   {{hero.name}}
-</div>
-</div>
+
+    <div class="col-xs-6 col-sm-3 col-md-2" *ngFor="let hero of heroes">
+      <img class="img-fluid" src="{{hero.images.sm}}" alt="{{hero.name}}"> {{hero.name}} {{hero.powerstats.power}} {{hero.appearance.race}}
+    </div>
+  </div>
 </div>
