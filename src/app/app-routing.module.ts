@@ -8,9 +8,9 @@ import { HistoryComponent } from './history/history.component';
 const routes: Routes = [
   { path: '', redirectTo: 'app', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
-  { path: 'home', component: GaleryComponent },
-  { path: 'home', component: GameComponent },
-  { path: 'home', component: HistoryComponent },
+  { path: 'galery', component: GaleryComponent },
+  { path: 'game', component: GameComponent },
+  { path: 'history', component: HistoryComponent },
   ];
 
 
