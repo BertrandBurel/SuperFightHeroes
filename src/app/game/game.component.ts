@@ -51,8 +51,9 @@ export class GameComponent implements OnInit {
     this.select.players[id].life -= 10;
     // this.test = this.test - 10;
     console.log(this.select.players[id].life);
-
-
   }
+
+  defense(id) {}
+  heal(id) {}
 
 }
