@@ -10,15 +10,15 @@
           <div class="progress">
             <div class="progress-bar" role="progressbar" [ngStyle]="{'width': select.players[0].life + '%'}">{{select.players[0].life + '%'}}</div>
           </div>
-          <div class="btn-group btn-group-sm" role="group">
+          <div class="btn-group btn-group-sm " role="group">
             
-            <button class="btn btn-secondary m-2" type="button" (click)="attack(1)">
+            <button class="btn btn-secondary m-2" type="button" (click)="attack1(1)">
               Attack!
             </button>
             <button class="btn btn-secondary m-2" type="button" (click)="defense(0)">
               Defense
             </button>
-            <button class="btn btn-secondary m-2" type="button" (click)="heal(0)">
+            <button class="btn btn-secondary m-2" type="button" (click)="heal1(0)">
               healing
             </button>
           </div>
@@ -38,13 +38,13 @@
           </div>
           <div class="btn-group btn-group-sm" role="group">
 
-            <button class="btn btn-secondary m-2" type="button" (click)="attack(0)">
+            <button class="btn btn-secondary m-2" type="button" (click)="attack2(0)">
               Attack!
             </button>
             <button class="btn btn-secondary m-2" type="button" (click)="defense(1)">
               Defense
             </button>
-            <button class="btn btn-secondary m-2" type="button" (click)="heal(1)">
+            <button class="btn btn-secondary m-2" type="button" (click)="heal2(1)">
               healing
             </button>
           </div>

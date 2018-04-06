@@ -35,6 +35,7 @@ import { SelectplayerComponent } from './selectplayer/selectplayer.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+
   ],
   providers: [ApiService, SelectService],
   bootstrap: [AppComponent]
