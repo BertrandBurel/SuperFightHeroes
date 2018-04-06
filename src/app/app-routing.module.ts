@@ -8,7 +8,7 @@ import { TestComponent } from './test/test.component';
 import { SelectplayerComponent } from './selectplayer/selectplayer.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'app', pathMatch: 'full' },
+  { path: '', redirectTo: 'select', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
   { path: 'galery', component: GaleryComponent },
   { path: 'game', component: GameComponent },

@@ -26,6 +26,8 @@ export class SelectplayerComponent implements OnInit {
   }
   chooseplayer(index) {
     this.select.players[this.nbrPlayer] = this.heroes[index];
+    this.select.players[this.nbrPlayer].life = 100;
+
     this.nbrPlayer = this.nbrPlayer + 1;
 
 

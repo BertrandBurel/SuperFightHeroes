@@ -7,15 +7,18 @@
              {{ select.players[0].name }}
           </h3>
           <img class="img-fluid" alt="Bootstrap Image Preview" src="{{select.players[0].images.md}}">
-
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" [ngStyle]="{'width': select.players[0].life + '%'}">{{select.players[0].life + '%'}}</div>
+          </div>
           <div class="btn-group btn-group-sm" role="group">
-            <button class="btn btn-secondary m-2" type="button" onclick="attack1()">
+            
+            <button class="btn btn-secondary m-2" type="button" (click)="attack(1)">
               Attack!
             </button>
-            <button class="btn btn-secondary m-2" type="button" onclick="defense1()">
+            <button class="btn btn-secondary m-2" type="button" (click)="defense1()">
               Defense
             </button>
-            <button class="btn btn-secondary m-2" type="button" onclick="heal1()">
+            <button class="btn btn-secondary m-2" type="button" (click)="heal1()">
               healing
             </button>
           </div>
@@ -30,16 +33,18 @@
              {{ select.players[1].name }}
           </h3>
           <img class="img-fluid" alt="Bootstrap Image Preview" src="{{select.players[1].images.md}}">
-
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" [ngStyle]="{'width': select.players[1].life + '%'}">{{select.players[1].life + '%'}}</div>
+          </div>
           <div class="btn-group btn-group-sm" role="group">
 
-            <button class="btn btn-secondary m-2" type="button" onclick="attack2()">
+            <button class="btn btn-secondary m-2" type="button" (click)="attack(0)">
               Attack!
             </button>
-            <button class="btn btn-secondary m-2" type="button" onclick="defense2()">
+            <button class="btn btn-secondary m-2" type="button" (click)="defense2()">
               Defense
             </button>
-            <button class="btn btn-secondary m-2" type="button" onclick="heal2()">
+            <button class="btn btn-secondary m-2" type="button" (click)="heal2()">
               healing
             </button>
           </div>
