@@ -12,7 +12,11 @@ import { HistoryComponent } from './history/history.component';
 import { NavbarComponent } from './navbar/navbar.component';
 // import du service commun vers api superheros https://akabab.github.io/superhero-api/api/
 import { ApiService } from './shared/api.service';
+import { SelectService } from './shared/select.service';
 import { TestComponent } from './test/test.component';
+import { SelectplayerComponent } from './selectplayer/selectplayer.component';
+
+
 
 
 @NgModule({
@@ -23,14 +27,16 @@ import { TestComponent } from './test/test.component';
     GameComponent,
     HistoryComponent,
     NavbarComponent,
-    TestComponent
+    TestComponent,
+    SelectplayerComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
   ],
-  providers: [ApiService],
+  providers: [ApiService, SelectService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

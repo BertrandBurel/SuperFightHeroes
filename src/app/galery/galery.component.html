@@ -2,7 +2,8 @@
   <div class="row">
 
     <div class="col-xs-1 col-md-2" *ngFor="let hero of heroes">
-      <img class="img-fluid" src="{{hero.images.sm}}" alt="{{hero.name}}"> {{hero.name}} 
+      <img class="img-fluid" src="{{hero.images.sm}}" alt="{{hero.name}}">{{hero.name}}
+      {{hero.powerstats.intelligence}}
     </div>
   </div>
 </div>

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient} from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { SelectService } from './select.service';
 
 @Injectable()
 export class ApiService {
@@ -12,22 +13,5 @@ export class ApiService {
   getHeroes() {
     return this.http.get(this.BASE_URL + 'all.json');
   }
-  getHeroesId(id) {
-    return this.http.get(this.BASE_URL + 'id/' + id + '.json');
-  }
-  getHeroesPower(id) {
-    return this.http.get(this.BASE_URL + 'powerstats/' + id + '.json');
-  }
-  getHeroesAppearance(id) {
-    return this.http.get(this.BASE_URL + 'appearance/' + id + '.json');
-  }
-  getHeroesBiography(id) {
-    return this.http.get(this.BASE_URL + 'biography/' + id + '.json');
-  }
-  // getHeroesImageXs(slug) {
-  //   return this.http.get(this.BASE_URL + 'images/xs/' + slug + '.jpg');
-  // }
-  // getHeroesImageLg(slug) {
-  //   return this.http.get(this.BASE_URL + 'images/lg/' + slug + '.jpg');
-  // }
+
 }
