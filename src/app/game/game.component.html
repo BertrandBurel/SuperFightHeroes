@@ -4,18 +4,18 @@
       <div class="row">
         <div class="col-md-3">
           <h3 class="text-center">
-            JOUEUR 1
+             {{ select.players[0].name }}
           </h3>
           <img class="img-fluid" alt="Bootstrap Image Preview" src="{{select.players[0].images.md}}">
 
           <div class="btn-group btn-group-sm" role="group">
-            <button class="btn btn-secondary" type="button" onclick="attack()">
+            <button class="btn btn-secondary m-2" type="button" onclick="attack1()">
               Attack!
             </button>
-            <button class="btn btn-secondary" type="button" onclick="defense()">
+            <button class="btn btn-secondary m-2" type="button" onclick="defense1()">
               Defense
             </button>
-            <button class="btn btn-secondary" type="button" onclick="heal()">
+            <button class="btn btn-secondary m-2" type="button" onclick="heal1()">
               healing
             </button>
           </div>
@@ -27,22 +27,78 @@
         </div>
         <div class="col-md-3">
           <h3 class="text-center">
-            JOUEUR 2
+             {{ select.players[1].name }}
           </h3>
           <img class="img-fluid" alt="Bootstrap Image Preview" src="{{select.players[1].images.md}}">
 
           <div class="btn-group btn-group-sm" role="group">
 
-            <button class="btn btn-secondary" type="button" onclick="attack()">
+            <button class="btn btn-secondary m-2" type="button" onclick="attack2()">
               Attack!
             </button>
-            <button class="btn btn-secondary" type="button" onclick="defense()">
+            <button class="btn btn-secondary m-2" type="button" onclick="defense2()">
               Defense
             </button>
-            <button class="btn btn-secondary" type="button" onclick="heal()">
+            <button class="btn btn-secondary m-2" type="button" onclick="heal2()">
               healing
             </button>
           </div>
+          <p> 
+
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="row">
+        <div class="col-md-3">
+          <h3 class="text-center">
+            Intelligence : {{ select.players[0].powerstats.intelligence }}
+          </h3>
+          <h3 class="text-center">
+            Strength : {{ select.players[0].powerstats.strength }}
+          </h3>
+          <h3 class="text-center">
+            Speed : {{ select.players[0].powerstats.speed }}
+          </h3>
+          <h3 class="text-center">
+            Durability : {{ select.players[0].powerstats.durability }}
+          </h3>
+          <h3 class="text-center">
+            Power : {{ select.players[0].powerstats.power }}
+          </h3>
+          <h3 class="text-center">
+            Combat : {{ select.players[0].powerstats.combat }}
+          </h3>
+  
+          
+        </div>
+        <div class="col-md-6">
+          <h1 class="text-center">
+           
+          </h1>
+        </div>
+        <div class="col-md-3">
+          <h3 class="text-center">
+            Intelligence : {{ select.players[1].powerstats.intelligence }}
+          </h3>
+          <h3 class="text-center">
+            Strength : {{ select.players[1].powerstats.strength }}
+          </h3>
+          <h3 class="text-center">
+            Speed : {{ select.players[1].powerstats.speed }}
+          </h3>
+          <h3 class="text-center">
+            Durability : {{ select.players[1].powerstats.durability }}
+          </h3>
+          <h3 class="text-center">
+            Power : {{ select.players[1].powerstats.power }}
+          </h3>
+          <h3 class="text-center">
+            Combat : {{ select.players[1].powerstats.combat }}
+          </h3>
         </div>
       </div>
     </div>
